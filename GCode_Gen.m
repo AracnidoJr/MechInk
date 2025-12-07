@@ -126,16 +126,6 @@ feedrate   = 2000;
 travelrate = 6000;
 px_to_mm   = 0.25;     % mm por pixel
 
-%% ===============================================================
-%   7. GENERAR ARCHIVO G-CODE, PREVIEW Y ENVÍO
-% ===============================================================
-
-disp("Generando G-Code...");
-
-feedrate   = 2000;
-travelrate = 6000;
-px_to_mm   = 0.25;     % mm por pixel
-
 %% ================== 7.1 Bounding box global ====================
 allPts = vertcat(curvas{:});
 allPtsMM = allPts * px_to_mm;
@@ -335,3 +325,4 @@ end
 
 clear arduino;
 disp("G-code ejecutado correctamente por MECHINK.");
+
